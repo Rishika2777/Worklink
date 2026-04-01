@@ -1,5 +1,5 @@
 import React from "react";
-import "./landing.css";
+import "./Landing.css";
 import { useNavigate } from "react-router-dom";
 import heroImage from "../../assets/images/hero.jpeg";
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import "./roleSelection.css";
+import "./RoleSelection.css";
 import {
   POST_SIGNUP_COMPLETE_KEY,
   POST_SIGNUP_EMPLOYER_KEY,

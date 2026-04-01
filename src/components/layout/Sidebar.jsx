@@ -12,7 +12,7 @@ import {
   FiGrid,FiHelpCircle, FiVideo, FiLayers
 } from "react-icons/fi";
 
-import "./sidebar.css";
+import "./Sidebar.css";
 import robot from "../../assets/images/robot-login.png";
 
 function Sidebar() {

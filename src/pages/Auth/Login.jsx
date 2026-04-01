@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./authFlowTheme.css";
-import "./login.css";
+import "./Login.css";
 import { useNavigate } from "react-router-dom";
 import robot from "../../assets/images/robot-login.png";
 import { FiEye, FiEyeOff, FiLock, FiMail } from "react-icons/fi";

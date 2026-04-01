@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./signup.css";
+import "./Signup.css";
 import { useNavigate } from "react-router-dom";
 import robot from "../../assets/images/robot-login.png";
 import { FaApple } from "react-icons/fa";

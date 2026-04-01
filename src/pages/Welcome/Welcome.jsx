@@ -1,5 +1,5 @@
 import React from "react";
-import "./welcome.css";
+import "./Welcome.css";
 import { useNavigate, useLocation } from "react-router-dom";
 import robot from "../../assets/images/robot-login.png";
 
