@@ -6,13 +6,9 @@ export default defineConfig({
   build: {
     reportCompressedSize: false,
     chunkSizeWarningLimit: 900,
+    minify: 'esbuild',
     rollupOptions: {
-      output: {
-        manualChunks: {
-          'react-vendor': ['react', 'react-dom', 'react-router-dom'],
-          'recharts-vendor': ['recharts'],
-        },
-      },
+      maxParallelFileOps: 3,
     },
   },
   server: {
