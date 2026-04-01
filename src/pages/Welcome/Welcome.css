@@ -1,0 +1,91 @@
+/* PAGE BACKGROUND */
+
+.welcome-page{
+  width:100%;
+  min-height:100vh;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  background: radial-gradient(circle at top,#1b3cff,#020a52);
+}
+
+
+/* MAIN LAYOUT */
+
+.welcome-container{
+        text-align: center;
+margin: auto;
+  width:1100px;
+  max-width:95%;
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+
+/* ROBOT */
+
+.welcome-robot img{
+  width:420px;
+}
+
+
+/* TEXT AREA */
+
+.welcome-text{
+  color:white;
+  text-align:left;
+}
+
+
+/* TITLE */
+
+.welcome-title{
+        text-align: center;
+
+  font-size:32px;
+  font-weight:500;
+  margin-bottom:10px;
+}
+
+
+/* BRAND */
+
+.welcome-brand{
+  font-size:64px;
+  font-weight:700;
+}
+
+
+/* "Work" wordmark color */
+
+.welcome-work{
+  color:#00b3ff;
+}
+
+
+/* "Link" wordmark color */
+
+.welcome-link{
+  color:#ff6a00;
+}
+
+
+/* SUBTITLE */
+
+.welcome-subtitle{
+    text-align: center;
+  margin-top:10px;
+  letter-spacing:6px;
+  font-size:18px;
+  color:#cfd8ff;
+}
+
+.next-btn{
+  text-align: center;
+  margin: auto;
+  padding: 2px;
+}

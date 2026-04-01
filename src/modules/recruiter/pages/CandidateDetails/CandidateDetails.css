@@ -1,0 +1,74 @@
+.details-wrapper {
+  padding: 30px;
+}
+
+.details-card {
+  display: flex;
+  gap: 40px;
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+}
+
+/* LEFT */
+.details-left {
+  width: 250px;
+  border-right: 1px solid #eee;
+  padding-right: 20px;
+}
+
+.profile-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+
+.details-left h4 {
+  margin-top: 20px;
+}
+
+.details-left p {
+  font-size: 14px;
+  margin: 6px 0;
+}
+
+/* RIGHT */
+.details-right {
+  flex: 1;
+}
+
+.details-right .role {
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.desc {
+  margin: 10px 0;
+  color: #555;
+}
+
+.quote {
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills span {
+  padding: 6px 12px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.back-btn {
+  border: none;
+  background: none;
+  font-size: 18px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}

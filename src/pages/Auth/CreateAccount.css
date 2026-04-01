@@ -1,0 +1,196 @@
+/* Step indicator inside card — third step active (purple pill per design) */
+.create-account-steps {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.create-account-card .auth-flow-step-pill--active {
+  background: #3f4079;
+}
+
+.create-account-title {
+  margin: 0 0 8px;
+  font-size: 1.375rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--auth-text);
+}
+
+.create-account-subtitle {
+  margin: 0 0 22px;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--auth-muted);
+}
+
+.create-account-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.create-account-field {
+  position: relative;
+  margin-bottom: 14px;
+}
+
+.create-account-field--toggle input {
+  padding-right: 44px;
+}
+
+.create-account-field--phone .create-account-phone-star {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ec4899;
+  font-size: 14px;
+  font-weight: 700;
+  pointer-events: none;
+}
+
+.create-account-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #94a3b8;
+  display: grid;
+  place-items: center;
+  font-size: 18px;
+  pointer-events: none;
+}
+
+.create-account-field input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px 12px 44px;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  background: #ffffff;
+  color: var(--auth-text);
+  font-size: 0.9375rem;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  font-family: inherit;
+}
+
+.create-account-field--phone input {
+  padding-right: 28px;
+}
+
+.create-account-field input::placeholder {
+  color: #9ca3af;
+}
+
+.create-account-field input:focus {
+  border-color: #94a3c9;
+  box-shadow: 0 0 0 3px rgba(63, 64, 121, 0.1);
+}
+
+.create-account-eye {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 8px;
+  border: none;
+  background: transparent;
+  color: #94a3b8;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+}
+
+.create-account-eye:hover {
+  color: var(--auth-accent-link);
+  background: #f1f5f9;
+}
+
+.create-account-terms {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 6px 0 20px;
+  font-size: 0.8125rem;
+  line-height: 1.45;
+  color: var(--auth-muted);
+  cursor: pointer;
+}
+
+.create-account-terms input {
+  margin-top: 3px;
+  width: 16px;
+  height: 16px;
+  accent-color: #3f4079;
+  flex-shrink: 0;
+}
+
+.create-account-inline-link {
+  padding: 0;
+  border: none;
+  background: none;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 600;
+  color: var(--auth-accent-link);
+  cursor: pointer;
+}
+
+.create-account-inline-link:hover {
+  text-decoration: underline;
+}
+
+.create-account-submit {
+  width: 100%;
+  padding: 13px 16px;
+  border: none;
+  border-radius: 12px;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  font-family: inherit;
+  color: #ffffff;
+  background: var(--auth-create-btn);
+  cursor: pointer;
+  transition: background 0.2s ease, opacity 0.2s ease;
+}
+
+.create-account-submit:hover:not(:disabled) {
+  background: var(--auth-create-btn-hover);
+}
+
+.create-account-submit:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.create-account-footer {
+  margin: 20px 0 0;
+  font-size: 0.875rem;
+  text-align: center;
+  color: var(--auth-muted);
+}
+
+.create-account-signin-link {
+  padding: 0;
+  border: none;
+  background: none;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 600;
+  color: var(--auth-accent-link);
+  cursor: pointer;
+}
+
+.create-account-signin-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .create-account-title {
+    font-size: 1.25rem;
+  }
+}

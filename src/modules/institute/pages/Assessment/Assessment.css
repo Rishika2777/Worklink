@@ -1,0 +1,309 @@
+.assessment-container{
+padding:30px;
+}
+
+
+/* HEADER */
+
+.assessment-header{
+padding: 2rem;
+display:flex;
+justify-content:space-between;
+align-items:center;
+  padding-bottom:18px;
+  margin-bottom:20px;
+
+  border-bottom:1px solid #d8d8d8;
+margin-bottom:25px;
+
+}
+
+.create-btn{
+
+background:#3b3f8c;
+color:white;
+
+border:none;
+
+padding:10px 20px;
+
+border-radius:8px;
+
+cursor:pointer;
+
+}
+
+
+/* CARD LIST */
+
+.assessment-list{
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+.assessment-list-error {
+  margin: 0 0 16px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #9b1c1c;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+}
+
+.assessment-list-empty {
+  margin: 0;
+  padding: 12px 0;
+  color: #787f96;
+  font-size: 14px;
+}
+
+.assessment-detail-loading {
+  margin: auto;
+  padding: 24px 32px;
+  background: #fff;
+  border-radius: 12px;
+  font-size: 15px;
+  color: #4b5563;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.assessment-view-error-text {
+  margin: 0 0 16px;
+  font-size: 14px;
+  color: #4b5563;
+  line-height: 1.45;
+}
+
+
+/* CARD */
+
+.assessment-card{
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+
+background:white;
+
+border-radius:14px;
+
+padding:20px;
+
+border:1px solid #eee;
+
+}
+
+
+/* LEFT */
+
+.assessment-left h3{
+
+font-size:16px;
+margin-bottom:4px;
+
+}
+
+.assessment-left p{
+
+font-size:13px;
+color:#777;
+
+}
+
+
+/* STATS */
+
+.assessment-stats{
+
+display:flex;
+gap:60px;
+
+}
+
+.assessment-stats h4{
+font-size:16px;
+}
+
+.assessment-stats span{
+
+font-size:12px;
+color:#777;
+
+}
+
+
+/* RIGHT */
+
+.assessment-right{
+
+display:flex;
+align-items:center;
+gap:20px;
+
+}
+
+
+/* STATUS */
+
+.status{
+
+padding:6px 18px;
+
+border-radius:20px;
+
+font-size:13px;
+
+}
+
+.status.active{
+
+background:#5cc26a;
+color:white;
+
+}
+
+.status.draft{
+
+background:#ccc;
+color:white;
+
+}
+
+
+/* ROW MENU (three dots) */
+
+.assessment-row-menu {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.assessment-row-menu-btn {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background: transparent;
+  color: #666;
+  cursor: pointer;
+}
+
+.assessment-row-menu-btn:hover {
+  background: #f5f7ff;
+  border-color: #e2e6f4;
+  color: #3b3f8c;
+}
+
+.assessment-row-menu-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+.assessment-row-dropdown {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 6px);
+  min-width: 132px;
+  background: #fff;
+  border: 1px solid #dce1ef;
+  border-radius: 10px;
+  box-shadow: 0 12px 28px rgba(24, 34, 92, 0.18);
+  overflow: hidden;
+  z-index: 50;
+}
+
+.assessment-row-dropdown button {
+  display: block;
+  width: 100%;
+  padding: 9px 12px;
+  border: none;
+  background: #fff;
+  text-align: left;
+  font-size: 13px;
+  color: #434b69;
+  cursor: pointer;
+}
+
+.assessment-row-dropdown button:hover {
+  background: #f4f7ff;
+}
+
+.assessment-row-dropdown button.danger {
+  color: #b02828;
+}
+
+.assessment-row-dropdown button.danger:hover {
+  background: #fff1f1;
+}
+
+/* View / delete overlays */
+
+.assessment-view-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.assessment-delete-modal {
+  width: min(420px, 100%);
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px 22px;
+  border: 1px solid #e8eaf2;
+  box-shadow: 0 28px 54px rgba(11, 16, 64, 0.22);
+}
+
+.assessment-delete-modal h3 {
+  margin: 0 0 10px;
+  font-size: 1.1rem;
+  color: #1f2437;
+}
+
+.assessment-delete-modal p {
+  margin: 0 0 18px;
+  font-size: 0.92rem;
+  color: #4e5673;
+  line-height: 1.45;
+}
+
+.assessment-delete-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.assessment-delete-cancel {
+  padding: 8px 16px;
+  border: 1px solid #d5daea;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  color: #4e5673;
+}
+
+.assessment-delete-confirm {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #b02828;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.assessment-delete-confirm:hover {
+  background: #951f1f;
+}

@@ -1,0 +1,170 @@
+/* OVERLAY */
+
+.resume-overlay{
+  position:fixed;
+  inset:0;
+
+  background:rgba(0,0,0,0.35);
+  backdrop-filter:blur(6px);
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  z-index:999;
+}
+
+
+/* MODAL */
+
+.resume-modal{
+  width:920px;
+  max-height:90vh;
+  overflow:auto;
+
+  background:#ffffff;
+
+  border-radius:18px;
+
+  padding:40px;
+
+  position:relative;
+
+  box-shadow:0 20px 60px rgba(0,0,0,0.25);
+}
+
+
+/* CLOSE BUTTON */
+
+.close-btn{
+  position:absolute;
+  top:18px;
+  right:22px;
+
+  font-size:22px;
+
+  border:none;
+  background:none;
+
+  cursor:pointer;
+
+  color:#444;
+}
+
+
+/* LAYOUT */
+
+.resume-container{
+  display:flex;
+  gap:40px;
+}
+
+
+/* LEFT SIDE */
+
+.resume-left{
+  width:260px;
+
+  border-right:1px solid #e6e6e6;
+
+  padding-right:25px;
+}
+
+.resume-avatar{
+  width:110px;
+  height:110px;
+
+  border-radius:50%;
+
+  object-fit:cover;
+
+  margin-bottom:20px;
+
+  border:3px solid #f3f3f3;
+}
+
+.resume-left h3{
+  margin-top:18px;
+  margin-bottom:10px;
+}
+
+.contact-item{
+  display:flex;
+  align-items:center;
+  gap:8px;
+
+  color:#555;
+
+  margin-bottom:10px;
+}
+
+.resume-left hr{
+  margin:20px 0;
+  border:none;
+  border-top:1px solid #e5e5e5;
+}
+
+
+/* RIGHT SIDE */
+
+.resume-right{
+  flex:1;
+}
+
+.resume-right h1{
+  font-size:38px;
+  margin-bottom:5px;
+}
+
+.role{
+  color:#6b6eff;
+  font-weight:500;
+  margin-bottom:12px;
+}
+
+.summary{
+  color:#555;
+  line-height:1.6;
+  max-width:540px;
+}
+
+.quote{
+  margin-top:10px;
+  font-style:italic;
+  color:#777;
+}
+
+
+/* SKILLS */
+
+.skills{
+  display:flex;
+  flex-wrap:wrap;
+
+  gap:10px;
+
+  margin-top:12px;
+}
+
+.skills span{
+  padding:6px 16px;
+
+  border:1px solid #ddd;
+
+  border-radius:22px;
+
+  background:#fafafa;
+
+  font-size:14px;
+}
+
+
+/* EXPERIENCE */
+
+.resume-right h3{
+  margin-top:22px;
+}
+
+.resume-right p{
+  margin:6px 0;
+}

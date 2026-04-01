@@ -1,0 +1,109 @@
+.institute-landing{
+
+  height:100vh;
+  width:100%;
+
+  background:
+  repeating-linear-gradient(
+    90deg,
+    #4a4fff 0px,
+    #4a4fff 60px,
+    #6a63ff 60px,
+    #6a63ff 120px
+  );
+
+  color:white;
+
+  display:flex;
+  flex-direction:column;
+}
+
+
+/* HEADER */
+
+.landing-header{
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  padding:30px 60px;
+}
+
+.logo{
+  font-size:22px;
+  font-weight:600;
+}
+
+.contact-btn{
+
+  background:transparent;
+  border:1px solid white;
+
+  color:white;
+
+  padding:10px 22px;
+
+  border-radius:30px;
+
+  cursor:pointer;
+}
+
+
+/* HERO */
+
+.landing-content{
+
+  flex:1;
+
+  display:flex;
+  flex-direction:column;
+
+  justify-content:center;
+  align-items:center;
+
+  text-align:center;
+
+  padding:0 20px;
+}
+
+.landing-content h1{
+
+  font-size:56px;
+  font-weight:600;
+
+  margin-bottom:20px;
+}
+
+.landing-content p{
+
+  max-width:650px;
+
+  font-size:16px;
+  line-height:1.6;
+
+  margin-bottom:40px;
+}
+
+
+.get-started{
+
+  background:transparent;
+  border:1px solid white;
+
+  color:white;
+
+  padding:12px 30px;
+
+  border-radius:30px;
+
+  font-size:16px;
+
+  cursor:pointer;
+}
+
+.get-started:hover{
+
+  background:white;
+  color:#4a4fff;
+}

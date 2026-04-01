@@ -1,0 +1,212 @@
+.enroll-container{
+padding:30px;
+}
+
+
+/* HEADER */
+
+.enroll-header{
+       padding-bottom:18px;
+  margin-bottom:20px;
+
+  border-bottom:1px solid #d8d8d8;
+    padding:2rem;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+margin-bottom:20px;
+}
+
+.header-actions{
+display:flex;
+align-items:center;
+gap:20px;
+}
+
+.add-course-btn{
+background:#3b3f8c;
+color:white;
+
+border:none;
+
+padding:10px 20px;
+border-radius:8px;
+
+cursor:pointer;
+}
+
+
+/* FILTER */
+
+.enroll-filters{
+    padding: 1rem;
+display:flex;
+gap:30px;
+margin-bottom:20px;
+}
+
+.filter{
+padding:8px 18px;
+border-radius:8px;
+border:1px solid #ddd;
+background:white;
+cursor:pointer;
+}
+
+.filter.active{
+background:#3b3f8c;
+color:white;
+}
+
+.dot{
+width:8px;
+height:8px;
+border-radius:50%;
+display:inline-block;
+margin-right:6px;
+}
+
+.green{background:green;}
+.blue{background:blue;}
+.red{background:red;}
+
+
+/* GRID */
+
+.enroll-grid{
+    padding: 1rem;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+}
+
+
+/* CARD */
+
+.enroll-card{
+
+background:white;
+
+border-radius:12px;
+
+padding:20px;
+
+border:1px solid #eee;
+}
+
+
+/* TOP */
+
+.course-top{
+display:flex;
+gap:12px;
+align-items:center;
+margin-bottom:10px;
+}
+
+.course-icon{
+width:40px;
+height:40px;
+background:#eef0ff;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:8px;
+}
+
+
+/* BATCH */
+
+.batch{
+background:#f2f2f2;
+display:inline-block;
+padding:4px 10px;
+border-radius:20px;
+font-size:12px;
+margin-bottom:15px;
+}
+
+
+/* PROGRESS */
+
+.progress-top{
+display:flex;
+justify-content:space-between;
+font-size:12px;
+margin-bottom:6px;
+}
+
+.progress-bar{
+height:6px;
+background:#eee;
+border-radius:10px;
+}
+
+.progress-fill{
+height:6px;
+background:#3b3f8c;
+border-radius:10px;
+}
+
+
+/* INFO */
+
+.course-info{
+display:flex;
+justify-content:space-between;
+margin-top:12px;
+font-size:12px;
+}
+
+
+/* STATUS */
+
+.status{
+    background: #3b3f8c;
+margin-top:15px;
+
+border:1px solid #eee;
+
+border-radius:20px;
+
+padding:6px 12px;
+
+text-align:center;
+
+font-size:13px;
+color:#ffffff;
+font-weight:600;
+}
+
+.status-dot{
+width:8px;
+height:8px;
+background:orange;
+border-radius:50%;
+display:inline-block;
+margin-right:6px;
+}
+.info-item{
+display:flex;
+align-items:center;
+gap:6px;
+}
+
+.info-icon{
+font-size:14px;
+color:#777;
+}
+
+.course-icon{
+width:40px;
+height:40px;
+background:#eef0ff;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:8px;
+font-size:18px;
+color:#3b3f8c;
+}

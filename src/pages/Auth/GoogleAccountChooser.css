@@ -1,0 +1,145 @@
+.google-chooser-card {
+  padding-bottom: 20px;
+}
+
+.google-chooser-brand {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.google-chooser-g-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  font-size: 20px;
+  background: linear-gradient(
+    135deg,
+    #4285f4,
+    #34a853,
+    #fbbc05,
+    #ea4335
+  );
+  color: #fff;
+}
+
+.google-chooser-title {
+  margin: 0 0 8px;
+  font-size: 1.375rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--auth-text);
+}
+
+.google-chooser-subtitle {
+  margin: 0 0 22px;
+  font-size: 0.9375rem;
+  text-align: center;
+  color: var(--auth-muted);
+}
+
+.google-chooser-list {
+  border: 1px solid var(--auth-border);
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 22px;
+}
+
+.google-chooser-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 14px 14px 16px;
+  border: none;
+  background: #fff;
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
+  position: relative;
+  transition: background 0.15s ease;
+}
+
+.google-chooser-row:hover:not(.google-chooser-row--another) {
+  background: #f9fafb;
+}
+
+.google-chooser-row--another {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.google-chooser-list > .google-chooser-row:not(:first-child) {
+  border-top: 1px solid var(--auth-border);
+}
+
+.google-chooser-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.google-chooser-avatar--outline {
+  background: #f3f4f6;
+  color: #9ca3af;
+  border: 1px solid #e5e7eb;
+  font-size: 18px;
+}
+
+.google-chooser-row-text {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.google-chooser-name {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: var(--auth-text);
+}
+
+.google-chooser-email {
+  font-size: 0.8125rem;
+  color: var(--auth-muted);
+}
+
+.google-chooser-chevron {
+  flex-shrink: 0;
+  color: #cbd5e1;
+  font-size: 20px;
+}
+
+.google-chooser-another-text {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #6c63ff;
+}
+
+.google-chooser-back {
+  display: block;
+  width: 100%;
+  padding: 8px 0 0;
+  border: none;
+  background: none;
+  font-family: inherit;
+  font-size: 0.875rem;
+  color: var(--auth-muted);
+  cursor: pointer;
+  text-align: center;
+}
+
+.google-chooser-back:hover {
+  color: var(--auth-text);
+}

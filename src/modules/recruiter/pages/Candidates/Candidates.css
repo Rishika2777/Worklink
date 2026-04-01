@@ -1,0 +1,220 @@
+.candidates-container{
+padding:30px;
+}
+
+
+/* HEADER */
+
+.candidate-header{
+display:flex;
+justify-content:flex-end;
+align-items:center;
+margin-bottom:25px;
+}
+
+/* RIGHT SIDE GROUP */
+
+.header-right{
+display:flex;
+align-items:center;
+gap:18px;
+}
+
+/* SEARCH */
+
+.search-box{
+width:320px;
+display:flex;
+align-items:center;
+gap:10px;
+
+padding:10px 16px;
+
+background:white;
+border-radius:25px;
+border:1px solid #ddd;
+}
+
+.search-box input{
+border:none;
+outline:none;
+width:100%;
+}
+
+.search-icon{
+color:#777;
+}
+
+
+/* NOTIFICATION */
+
+.notification-icon{
+position:relative;
+font-size:22px;
+cursor:pointer;
+}
+
+.notify-dot{
+position:absolute;
+top:2px;
+right:-2px;
+width:8px;
+height:8px;
+background:#2ecc71;
+border-radius:50%;
+}
+
+
+/* CARD */
+
+.candidate-card{
+background:white;
+border-radius:14px;
+padding:25px;
+border:1px solid #eee;
+width:420px;
+}
+
+
+/* LEFT */
+
+.candidate-left{
+display:flex;
+gap:16px;
+align-items:flex-start;
+}
+
+
+/* AVATAR */
+
+.avatar{
+width:48px;
+height:48px;
+border-radius:50%;
+background:#c8e6c9;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+font-weight:600;
+color:#2e7d32;
+}
+
+
+/* INFO */
+
+.candidate-info h3{
+margin:0;
+}
+
+.email{
+font-size:13px;
+color:#777;
+margin-top:2px;
+}
+
+.education{
+font-size:13px;
+color:#777;
+margin-top:6px;
+}
+
+.role{
+margin-top:6px;
+font-size:14px;
+}
+
+
+/* SKILLS */
+
+.candidate-skills{
+margin-top:10px;
+display:flex;
+gap:8px;
+}
+
+.candidate-skills span{
+background:#f2f2f2;
+padding:4px 10px;
+border-radius:14px;
+font-size:12px;
+}
+
+
+/* BUTTONS */
+
+.candidate-buttons{
+margin-top:15px;
+display:flex;
+gap:10px;
+align-items:center;
+}
+
+.view-btn{
+background:#eee;
+border:none;
+padding:8px 16px;
+border-radius:8px;
+cursor:pointer;
+}
+
+.shortlist-btn{
+background:#1b8f1b;
+color:white;
+border:none;
+padding:8px 16px;
+border-radius:8px;
+cursor:pointer;
+}
+
+.reject-icon{
+color:red;
+font-size:16px;
+cursor:pointer;
+}
+
+/* BUTTONS */
+
+.candidate-buttons{
+margin-top:15px;
+display:flex;
+gap:10px;
+align-items:center;
+}
+
+.view-btn{
+background:#eee;
+border:none;
+padding:8px 14px;
+border-radius:8px;
+cursor:pointer;
+display:flex;
+align-items:center;
+gap:6px;
+}
+
+.shortlist-btn{
+background:#1b8f1b;
+color:white;
+border:none;
+padding:8px 14px;
+border-radius:8px;
+cursor:pointer;
+display:flex;
+align-items:center;
+gap:6px;
+}
+
+.reject-btn{
+background:#fbe9e7;
+border:none;
+padding:8px;
+border-radius:8px;
+cursor:pointer;
+color:#d32f2f;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:16px;
+}

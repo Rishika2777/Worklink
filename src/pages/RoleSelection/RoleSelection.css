@@ -1,0 +1,80 @@
+/* PAGE */
+
+.role-page{
+  width:100%;
+  min-height:100vh;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  /* SPACE BACKGROUND IMAGE */
+
+  background-image: url("../../assets/images/space-bg.jpg");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+
+  color:white;
+}
+
+
+/* CONTAINER */
+
+.role-container{
+  text-align:center;
+  color:white;
+}
+
+
+/* ROBOT */
+
+.role-robot img{
+  width:150px;
+  margin-bottom:20px;
+}
+
+
+/* TITLE */
+
+.role-title{
+  font-size:32px;
+  margin-bottom:40px;
+  font-weight:500;
+}
+
+
+/* BUTTON AREA */
+
+.role-buttons{
+  display:flex;
+  flex-direction:column;
+  gap:25px;
+  align-items:center;
+}
+
+
+/* BUTTON */
+
+.role-btn{
+  width:320px;
+  padding:14px 0;
+
+  border-radius:40px;
+  border:1px solid rgba(255,255,255,0.7);
+
+  background:rgba(10,20,60,0.5);
+  color:white;
+
+  font-size:18px;
+  cursor:pointer;
+
+  transition:0.3s;
+}
+
+
+/* HOVER */
+
+.role-btn:hover{
+  background:rgba(20,40,100,0.9);
+}

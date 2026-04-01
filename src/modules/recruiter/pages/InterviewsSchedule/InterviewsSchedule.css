@@ -1,0 +1,380 @@
+.interview-container{
+  padding:30px;
+}
+
+
+/* HEADER */
+
+.interview-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  padding-bottom:18px;
+  margin-bottom:25px;
+
+  border-bottom:1px solid #e5e5e5;
+}
+
+
+/* SEARCH */
+
+.search-box{
+  display:flex;
+  align-items:center;
+  gap:10px;
+
+  width:320px;
+
+  background:white;
+
+  padding:10px 18px;
+
+  border-radius:25px;
+
+  border:1px solid #ddd;
+}
+
+.search-box input{
+  border:none;
+  outline:none;
+  width:100%;
+}
+
+.search-icon{
+  color:#888;
+}
+
+
+/* VIEW RESUME BUTTON */
+
+.view-btn{
+  background:#3f3d8f;
+  color:white;
+
+  border:none;
+
+  padding:10px 18px;
+
+  border-radius:8px;
+
+  cursor:pointer;
+}
+
+
+/* CARD */
+
+.interview-card{
+  background:white;
+
+  border-radius:16px;
+
+  padding:35px;
+
+  border:1px solid #eee;
+}
+
+
+/* NAME ROW */
+
+.name-row{
+  display:flex;
+  align-items:center;
+  gap:20px;
+
+  margin-bottom:18px;
+}
+
+.candidate-img{
+  width:65px;
+  height:65px;
+
+  border-radius:10px;
+
+  object-fit:cover;
+}
+
+
+/* FORM */
+
+.form-group{
+  display:flex;
+  flex-direction:column;
+
+  margin-bottom:18px;
+}
+
+.form-group.full{
+  flex:1;
+}
+
+.form-group label{
+  font-size:14px;
+  margin-bottom:6px;
+}
+
+.form-group input,
+.form-group select{
+    margin: 5px;
+  padding:12px;
+
+  border-radius:8px;
+
+  border:1px solid #ddd;
+
+  background:#fafafa;
+}
+
+
+/* DATE ROW */
+
+/* DATE ROW */
+
+.date-row{
+  display:flex;
+  align-items:flex-end;
+  gap:20px;
+  margin-top:10px;
+}
+
+/* EACH FIELD */
+
+.date-field{
+  display:flex;
+  flex-direction:column;
+  flex:1;
+}
+
+/* SAVE BUTTON */
+
+.save-btn{
+  background:#52b437;
+  color:white;
+
+  border:none;
+
+  padding:12px 26px;
+
+  border-radius:8px;
+
+  cursor:pointer;
+
+  height:45px;
+}
+
+.date-row .form-group{
+  flex:1;
+}
+
+/* TOP SECTION */
+
+.top-section{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:20px;
+}
+
+
+/* STATS */
+
+.stats{
+display:flex;
+gap:20px;
+}
+
+.stat-box{
+background:white;
+border:1px solid #eee;
+border-radius:12px;
+padding:15px 25px;
+width:140px;
+}
+
+.stat-number{
+font-size:20px;
+font-weight:600;
+}
+
+.stat-label{
+font-size:13px;
+color:#777;
+}
+
+
+/* SCHEDULE BUTTON */
+
+.schedule-btn{
+background:#3f3d8f;
+color:white;
+border:none;
+padding:10px 18px;
+border-radius:8px;
+cursor:pointer;
+}
+
+
+/* INTERVIEW LIST */
+
+.interview-list{
+margin-bottom:20px;
+}
+
+.interview-item{
+background:white;
+border:1px solid #eee;
+border-radius:12px;
+padding:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+
+/* LEFT SIDE */
+
+.interview-left h4{
+margin:0;
+font-size:16px;
+}
+
+.interview-left p{
+margin:4px 0;
+color:#777;
+font-size:14px;
+}
+
+.meta{
+display:flex;
+gap:15px;
+font-size:13px;
+color:#666;
+margin-top:6px;
+}
+
+.online{
+color:#4CAF50;
+}
+
+
+/* JOIN BUTTON */
+
+.join-btn{
+background:#eee;
+border:none;
+padding:8px 16px;
+border-radius:8px;
+cursor:pointer;
+}
+
+/* FILTER ROW */
+
+.filter-row{
+margin:15px 0;
+}
+
+/* STATUS DROPDOWN */
+
+.status-filter{
+padding:10px 14px;
+border:1px solid #ddd;
+border-radius:8px;
+background:white;
+font-size:14px;
+cursor:pointer;
+}
+/* HEADER ACTIONS */
+
+.header-actions{
+display:flex;
+align-items:center;
+gap:18px;
+}
+
+/* NOTIFICATION ICON */
+
+.notification-icon{
+position:relative;
+font-size:22px;
+cursor:pointer;
+display:flex;
+align-items:center;
+}
+
+/* GREEN DOT */
+
+.notify-dot{
+position:absolute;
+top:2px;
+right:0px;
+width:8px;
+height:8px;
+background:#2ecc71;
+border-radius:50%;
+}
+
+/* SAVE BUTTON */
+
+.save-btn{
+  background:#52b437;
+
+  color:white;
+
+  border:none;
+
+  padding:12px 26px;
+
+  border-radius:8px;
+
+  cursor:pointer;
+
+  height:45px;
+}
+
+/* SELECT WRAPPER */
+
+.select-wrapper{
+  position:relative;
+  width:100%;
+}
+
+/* SELECT FIELD */
+
+.select-wrapper select{
+
+  width:100%;
+
+  padding:12px 40px 12px 12px;
+
+  border-radius:8px;
+
+  border:1px solid #ddd;
+
+  background:#fafafa;
+
+  appearance:none;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+
+  cursor:pointer;
+}
+
+/* CUSTOM ARROW */
+
+.select-wrapper::after{
+
+  content:"▼";
+
+  position:absolute;
+
+  right:14px;
+  top:50%;
+
+  transform:translateY(-50%);
+
+  font-size:12px;
+
+  color:#777;
+
+  pointer-events:none;
+}

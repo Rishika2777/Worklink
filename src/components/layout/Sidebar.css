@@ -1,0 +1,119 @@
+.sidebar{
+  width:320px;
+  height:100vh;
+  background:linear-gradient(180deg,#2b2f78,#4b4fa3);
+  color:white;
+ padding:12px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+
+  padding:20px 0;
+}
+
+/* logo */
+
+.logo{
+  font-size:22px;
+  font-weight:600;
+  padding:20px 30px;
+}
+
+/* menu */
+
+.menu{
+  list-style:none;
+  padding:0;
+  margin-top:20px;
+}
+
+.menu li{
+    color:#fff;
+  /* padding:14px 28px; */
+  margin:8px 16px;
+  border-radius:30px;
+
+  font-size:17px;
+  font-weight:500;
+
+  display:flex;
+  align-items:center;
+  gap:10px;
+
+  cursor:pointer;
+  transition:all .2s ease;
+}
+
+/* hover effect */
+
+.menu li:hover{
+  background:white;
+  color:#2b2f78;
+  font-weight: 600;
+}
+.menu a{
+  text-decoration:none;
+  color:white;
+
+  display:flex;
+  align-items:center;
+  gap:10px;
+
+  padding:14px 28px;
+  margin:8px 16px;
+
+  border-radius:30px;
+
+  transition:all .2s ease;
+}
+
+.menu a:hover{
+  background:white;
+  color:#2b2f78;
+  font-weight:600;
+}
+
+.menu a.active{
+  background:white;
+  color:#2b2f78;
+  font-weight:600;
+}
+
+
+/* robot image */
+
+.sidebar-robot{
+  text-align:center;
+  margin-top:40px;
+}
+
+.sidebar-robot img{
+  width:110px;
+}
+
+/* logout */
+
+.logout{
+  padding:20px;
+  text-align:center;
+  font-size:14px;
+  opacity:.9;
+  cursor:pointer;
+}
+
+.logout:hover{
+  opacity:1;
+}
+
+.icon{
+  font-size:18px;
+}
+
+.menu a{
+  text-decoration:none;
+  color:inherit;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  width:100%;
+}

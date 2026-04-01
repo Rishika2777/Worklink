@@ -1,0 +1,27 @@
+.app-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.app-layout-content {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Keep admin sidebar fixed while right content scrolls */
+.app-layout.admin-layout .sidebar {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  align-self: flex-start;
+}
+.layout{
+  display:flex;
+  background:#f6f7fb;
+  min-height:100vh;
+}
+
+.content{
+  flex:1;
+  padding:60px;
+}

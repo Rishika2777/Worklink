@@ -1,0 +1,72 @@
+/* Shared auth screens — sky → periwinkle gradient (matches design ref #A1C4FD → #C2E9FB) */
+.auth-flow-page {
+  --auth-navy: #2e3171;
+  --auth-navy-hover: #25285c;
+  --auth-border: #e5e7eb;
+  --auth-text: #1a1c1e;
+  --auth-muted: #64748b;
+  --auth-muted-light: #94a3b8;
+  --auth-accent-link: #3f4079;
+  --auth-link-blue: #4a90e2;
+  --auth-create-btn: #7b7da7;
+  --auth-create-btn-hover: #6d6f98;
+
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 28px 20px 36px;
+  box-sizing: border-box;
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Helvetica,
+    Arial, sans-serif;
+  color: var(--auth-text);
+  background: linear-gradient(90deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+.auth-flow-shell {
+  width: 100%;
+  max-width: 440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* 4-step indicator: active = navy pill, inactive = gray dots */
+.auth-flow-step-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.auth-flow-step-pill {
+  width: 36px;
+  height: 8px;
+  border-radius: 999px;
+  background: #cbd5e1;
+  flex-shrink: 0;
+}
+
+.auth-flow-step-pill--active {
+  width: 44px;
+  background: var(--auth-navy);
+}
+
+.auth-flow-step-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #cbd5e1;
+  flex-shrink: 0;
+}
+
+.auth-flow-card {
+  width: 100%;
+  padding: 28px 26px 24px;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06), 0 4px 12px rgba(46, 49, 113, 0.06);
+  border: 1px solid rgba(224, 224, 224, 0.95);
+}

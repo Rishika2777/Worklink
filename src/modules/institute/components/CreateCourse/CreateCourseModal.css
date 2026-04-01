@@ -1,0 +1,289 @@
+.course-modal-overlay{
+  position: fixed;
+  top:0;
+  left:0;
+  width:100vw;
+  height:100vh;
+
+  background: rgba(0,0,0,0.35);
+  backdrop-filter: blur(6px);
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  z-index:9999;
+}
+
+
+/* MODAL BOX */
+
+.course-modal{
+  width:900px;
+  max-height:90vh;
+
+  overflow-y:auto;
+
+  background:white;
+
+  border-radius:14px;
+
+  padding:30px;
+
+  box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+
+/* HEADER */
+
+.modal-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.cancel-btn {
+  cursor: pointer;
+  font-weight: 500;
+  border: none;
+  background: none;
+  font: inherit;
+  color: inherit;
+}
+
+
+/* STEPPER */
+
+.stepper{
+  display:flex;
+  align-items:center;
+  margin:25px 0;
+}
+
+.circle{
+  width:36px;
+  height:36px;
+  border-radius:50%;
+  border:1px solid #ccc;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  background:white;
+}
+
+.circle.active{
+  background:#3b3f8c;
+  color:white;
+}
+
+.line{
+  flex:1;
+  height:1px;
+  background:#ddd;
+  margin:0 10px;
+}
+
+
+/* CARD */
+
+.course-card{
+  border:1px solid #eee;
+  border-radius:12px;
+  padding:25px;
+  background:#fafafa;
+}
+
+.course-card-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.course-card-title svg {
+  width: 22px;
+  height: 22px;
+  color: #3b3f8c;
+  flex-shrink: 0;
+}
+
+.course-card-title h3 {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #2b2f78;
+  letter-spacing: -0.02em;
+}
+
+.card-desc {
+  margin: 0 0 20px;
+  font-size: 0.9rem;
+  color: #6b7289;
+  line-height: 1.45;
+}
+
+/* FORM — field titles read as headings; required marked with * */
+
+.course-field-label {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1f2437;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+  margin-top: 18px;
+}
+
+.course-field-label:first-of-type {
+  margin-top: 0;
+}
+
+.course-field-required {
+  color: #dc2626;
+  font-weight: 700;
+  margin-left: 2px;
+}
+
+.course-card input,
+.course-card textarea,
+.course-card select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d8dce8;
+  border-radius: 8px;
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 0.95rem;
+  color: #1f2437;
+  box-sizing: border-box;
+}
+
+.course-card input:focus,
+.course-card textarea:focus,
+.course-card select:focus {
+  outline: none;
+  border-color: #8e97da;
+  box-shadow: 0 0 0 3px rgba(59, 63, 140, 0.12);
+}
+
+.course-card textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.next-btn{
+  background:#3b3f8c;
+  color:white;
+  border:none;
+  padding:10px 18px;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+.next-btn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.course-modal-error {
+  margin: 0 0 12px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #9b1c1c;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+}
+
+.course-modal-loading {
+  margin: 0 0 12px;
+  font-size: 14px;
+  color: #4b5563;
+}
+
+.course-modal-stepper-dim {
+  opacity: 0.45;
+  pointer-events: none;
+}
+
+.course-dynamic-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.course-dynamic-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.course-dynamic-row input {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+.course-row-remove {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #e0e4ef;
+  border-radius: 8px;
+  background: #fff;
+  color: #b02828;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+
+.course-row-remove:hover {
+  background: #fff1f1;
+}
+
+.course-add-btn {
+  align-self: flex-start;
+  margin-top: 4px;
+}
+
+.step-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+
+.prev-btn {
+  background: #fff;
+  color: #4e5673;
+  border: 1px solid #d5daea;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.prev-btn:hover {
+  background: #f8f9fc;
+}
+
+.ghost-btn {
+  background: transparent;
+  color: #3b3f8c;
+  border: 1px dashed #c5cbe0;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.ghost-btn:hover {
+  background: #f4f6fc;
+  border-color: #9aa3d4;
+}
