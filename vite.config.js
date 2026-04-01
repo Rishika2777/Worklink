@@ -3,6 +3,18 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
+  build: {
+    reportCompressedSize: false,
+    chunkSizeWarningLimit: 900,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'react-vendor': ['react', 'react-dom', 'react-router-dom'],
+          'recharts-vendor': ['recharts'],
+        },
+      },
+    },
+  },
   server: {
     proxy: {
       '/api': {
