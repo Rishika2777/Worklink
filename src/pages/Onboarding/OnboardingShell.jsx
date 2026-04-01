@@ -1,4 +1,4 @@
-import "../Auth/signup.css";
+import "../Auth/Signup.css";
 import "./OnboardingShell.css";
 import robot from "../../assets/images/robot-login.png";
 import { FiArrowRight } from "react-icons/fi";
