@@ -8,9 +8,7 @@
   align-items:center;
   justify-content:center;
 
-  /* SPACE BACKGROUND IMAGE */
-
-  background-image: url("../../assets/images/space-bg.jpg");
+  /* Background image is set inline in RoleSelection.jsx (background.jpeg) */
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
